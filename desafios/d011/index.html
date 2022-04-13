@@ -6,37 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Espaço</title>
     <style>
-        *{
-            padding: 0px;
-            margin: 0px;
-        }
-        main > img.espaço{
-            display: block;
-            height: 1000px;
-            width: 100%;
-
+        body#espaço{
+            height: 97vh;
+            position: relative;
+            background-image: url('imagens/espaco.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
         }
 
-        main > div.astronauta{
+        main#astronauta{
             position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            width: 400px;
-            height: 400px;
-            margin: auto;
-            
-            
+            height: 300px;
+            width: 300px;
+            background-image: url('imagens/astronauta.png');
+            background-size: cover;
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+
         }
     </style>
 </head>
-<body>
-    <main>
-        <img src="imagens/espaco.jpg" alt="espaço" class="espaço">
-        <div class="astronauta">
-            <img src="imagens/astronauta.png" alt="astronauta">
-        </div>
+<body id="espaço">
+    <main id="astronauta">
+
     </main>
 </body>
 </html>
